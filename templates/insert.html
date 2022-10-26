@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html>
+<head>
+<title>Datastore App</title>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Datastore info</h1>
+<!-- [START gae_python38_datastore_print_times] -->
+<!-- [START gae_python3_datastore_print_times] -->
+<h2>Insert Student</h2>
+    <form action="/insert" method="POST">
+    Student:<br>
+         <dl>
+		 <dt>First Name</dt>
+		 <dd>
+<input type="text" name="first_name" value={{first_name}}>    
+	 </dd><dt>Last Name</dt>
+	 <dd>
+<input type="text" name="last_name" value={{last_name}}>    
+	 </dd><dt>Birth year</dt>
+	 <dd>
+<input type="text" name="birthyear" value={{birthyear}}>    
+	 </dd><dt>Document</dt>
+	 <dd>
+<input type="text" name="document" value={{document}}>    
+	 </dd>
+ <dt>
+	 <button type="submit" class="btn btn-primary">Submit</button>
+		 </dt>
+		 <dd></dd>
+	  </dl>
+	  </form> 
+
+
+  <!-- [END gae_python3_datastore_print_times] -->
+  <!-- [END gae_python38_datastore_print_times] -->
+</body>
+</html>
